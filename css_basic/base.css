@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #222222;
+}
+
+header,
+footer,
+article,
+aside {
+    padding: 16px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    body.works_on_smartphone main {
+        flex-direction: column;
+    }
+}
