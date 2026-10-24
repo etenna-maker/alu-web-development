@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: #002333;
+}
+
+h1, h2, h3, p, blockquote {
+    margin: 0;
+}
+
+h1 span, h2 span {
+    color: #C271FF;
+    font-weight: 700;
+}
+
+button {
+    background-color: #C271FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 30px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 6px 16px rgba(194, 113, 255, 0.45);
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section > h1 {
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav img {
+    height: 36px;
+    display: block;
+}
+
+.links a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+/* Banner */
+.hero {
+    background: linear-gradient(rgba(0, 35, 51, 0.3), #0c1428 85%), url("https://picsum.photos/seed/smileschool/1440/900?grayscale") center / cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 170px 0 90px;
+}
+
+.hero h1 {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.hero-text p {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    word-spacing: 40px;
+    margin: 20px 0 30px;
+}
+
+.pros {
+    margin-top: 160px;
+}
+
+.pros h2 {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.pros-list {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.person {
+    width: 180px;
+}
+
+.person img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.person h3 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.person p {
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 6px;
+}
+
+/* Quote */
+.quote {
+    background-color: #C271FF;
+    color: #ffffff;
+    padding: 90px 0;
+}
+
+.quote-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 760px;
+}
+
+.quote img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.quote blockquote {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.quote-text p:first-of-type {
+    font-weight: 700;
+}
+
+.quote-text p:last-child {
+    font-style: italic;
+}
+
+/* Videos */
+.videos {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.video-list {
+    display: flex;
+    gap: 24px;
+}
+
+.video {
+    position: relative;
+    flex: 1;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    padding-bottom: 16px;
+}
+
+.video > img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.video::before {
+    content: "";
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    width: 56px;
+    height: 56px;
+    margin-left: -28px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.video::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-left: -5px;
+    border-style: solid;
+    border-width: 10px 0 10px 16px;
+    border-color: transparent transparent transparent #C271FF;
+}
+
+.video h2 {
+    font-size: 15px;
+    margin: 16px 16px 8px;
+}
+
+.video > p {
+    font-size: 13px;
+    color: #8a8a8a;
+    margin: 0 16px 14px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 16px 12px;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.author h3 {
+    font-size: 13px;
+    color: #C271FF;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px;
+}
+
+.stars img {
+    width: 15px;
+    margin-right: 4px;
+}
+
+.rating p {
+    color: #C271FF;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* Membership */
+.membership {
+    background-color: #0c1428;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.perks {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.perk {
+    flex: 1;
+}
+
+.perk img {
+    width: 48px;
+    margin-bottom: 20px;
+}
+
+.perk h2 {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.perk p {
+    font-size: 14px;
+}
+
+/* FAQ */
+.faq {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.faq > h1 {
+    font-size: 48px;
+}
+
+.faq-grid {
+    width: 90%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.faq-row {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+
+.faq-item {
+    flex: 1;
+}
+
+.faq-item h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.faq-item p {
+    color: #8a8a8a;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #0c1428;
+    padding: 60px 0 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top > img {
+    height: 36px;
+}
+
+.social a {
+    margin-left: 14px;
+}
+
+.social img {
+    width: 28px;
+}
+
+.copyright {
+    color: #6c7a91;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    .pros-list,
+    .video-list,
+    .perks,
+    .faq-row,
+    .quote-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+}
